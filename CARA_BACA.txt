@@ -1,0 +1,18 @@
+BIRTHDAY WEBSITE - KOKO SAMUEL
+
+Cara menjalankan:
+1. Extract/unzip folder ini.
+2. Pastikan semua file tetap berada dalam satu folder.
+3. Klik dua kali index.html untuk membuka website di browser.
+4. Musik I Love You - Job Covers sudah terpasang.
+
+Foto yang sudah dipasang:
+- foto-utama.jpg
+- foto-1.jpg
+- foto-2.jpg
+- foto-3.jpg
+- foto-4.jpg
+- foto-terbaik.jpg
+
+Saat ini foto-3 dan foto-4 memakai foto yang sudah kamu kirim karena baru ada 3 foto.
+Kalau kamu kirim foto tambahan, bagian itu bisa diganti.
