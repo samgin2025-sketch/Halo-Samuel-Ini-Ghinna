@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open When It's Your Birthday 🎁</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Parisienne&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f8f1eb;color:#3d2b2b;font-family:"DM Sans",sans-serif}.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 18px;position:relative;overflow:hidden}.card{max-width:720px;width:100%;text-align:center}.eyebrow{letter-spacing:.16em;text-transform:uppercase;font-size:11px;opacity:.65}.script{font-family:Parisienne,cursive;font-size:clamp(38px,9vw,70px);font-weight:400}.serif{font-family:"Cormorant Garamond",serif}.hero h1{font:700 clamp(45px,11vw,82px) "Cormorant Garamond",serif;line-height:.9;margin:15px 0}.hero p,.letter p{line-height:1.8}.btn{border:0;border-radius:999px;padding:14px 24px;background:#4a3030;color:white;cursor:pointer;font-weight:600;margin:10px;box-shadow:0 10px 25px #4a30302b}.btn.light{background:#fff;color:#4a3030}.gift{font-size:100px;filter:drop-shadow(0 18px 12px #4a30302a);animation:float 2.5s ease-in-out infinite}@keyframes float{50%{transform:translateY(-10px)}}.stars span{position:absolute;font-size:18px;opacity:.35;animation:twinkle 3s infinite alternate}.stars span:nth-child(1){top:12%;left:12%}.stars span:nth-child(2){top:24%;right:15%;animation-delay:.8s}.stars span:nth-child(3){bottom:18%;left:20%;animation-delay:1.4s}.stars span:nth-child(4){bottom:28%;right:12%;animation-delay:2s}@keyframes twinkle{to{opacity:.9;transform:scale(1.3)}}.photo{width:min(88vw,440px);aspect-ratio:4/5;object-fit:cover;border-radius:18px;box-shadow:0 20px 50px #4a30302a;margin:20px auto}.memories{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:25px 0}.polaroid{background:white;padding:10px 10px 18px;box-shadow:0 15px 35px #4a30301c;transform:rotate(-2deg)}.polaroid:nth-child(even){transform:rotate(2deg)}.polaroid img{width:100%;aspect-ratio:1/1;object-fit:cover}.polaroid small{display:block;margin-top:10px}.letter{background:#fffaf6;padding:34px 25px;border-radius:8px;box-shadow:0 20px 60px #4a303018;text-align:left;position:relative}.letter:before{content:"";position:absolute;inset:12px;border:1px solid #4a303022;pointer-events:none}.letter>*{position:relative}.music{background:#eadbd3;padding:30px;border-radius:24px}.final{background:#382525;color:#fff4ed}.final .photo{box-shadow:0 20px 60px #0006}.hidden{display:none}.reveal{opacity:0;transform:translateY(25px);transition:.8s}.reveal.show{opacity:1;transform:none}.small{font-size:13px;opacity:.7}.nav{position:absolute;bottom:18px;left:0;right:0;text-align:center}.next{font-size:13px;opacity:.7}.confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}.piece{position:absolute;top:-20px;width:8px;height:14px;animation:fall 3s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}@media(max-width:560px){.memories{gap:10px}.letter{padding:25px 18px}}
+</style>
+</head>
+<body>
+<div class="stars"><span>✦</span><span>✧</span><span>✦</span><span>✧</span></div>
+
+<section class="page hero" id="gift">
+  <div class="card">
+    <div class="gift">🎁</div>
+    <div class="eyebrow">A little surprise for you</div>
+    <h1>Hey, Koko Samuel…</h1>
+    <p>Someone prepared something special just for you.</p>
+    <button class="btn" onclick="openGift()">Open Your Gift 🤍</button>
+  </div>
+</section>
+
+<main id="main" class="hidden">
+<section class="page">
+ <div class="card reveal">
+  <div class="eyebrow">Today is your day</div>
+  <h2 class="serif" style="font-size:clamp(45px,10vw,75px);margin:12px 0">Happy Birthday,<br>Koko Samuel 🤍</h2>
+  <p>Today is your day, but somehow Ghinna is the lucky one… because I get to have you in my life. 🤍</p>
+  <img class="photo" src="foto-utama.jpg" alt="Foto utama">
+  <button class="btn" onclick="document.getElementById('memories').scrollIntoView()">There’s more… →</button>
+ </div>
+</section>
+
+<section class="page" id="memories">
+ <div class="card">
+  <div class="eyebrow">Our little memories</div>
+  <h2 class="script">Favorite moments</h2>
+  <p>Some moments may look simple, but with you, they became my favorite memories.</p>
+  <div class="memories">
+   <div class="polaroid reveal"><img src="foto-1.jpg"><small>One of my favorite you 🤍</small></div>
+   <div class="polaroid reveal"><img src="foto-2.jpg"><small>Us, in our own little world.</small></div>
+   <div class="polaroid reveal"><img src="foto-3.jpg"><small>A moment I want to remember.</small></div>
+   <div class="polaroid reveal"><img src="foto-4.jpg"><small>And many more to come.</small></div>
+  </div>
+ </div>
+</section>
+
+<section class="page">
+ <div class="card">
+  <div class="eyebrow">From my heart</div>
+  <h2 class="script">A little letter for you 💌</h2>
+  <div class="letter">
+    <p>Dear <b>Koko Samuel</b>,</p>
+    <p>Happy birthday, sayang. 🤍</p>
+    <p>Hari ini adalah hari spesial buat kamu, dan Ghinna cuma mau bilang satu hal: thank you for being you.</p>
+    <p>Semoga di umur yang baru ini, semua hal baik datang menghampiri Koko Samuel satu per satu. Semoga setiap langkah Koko dimudahkan, rezekinya dilancarkan, sehat selalu, dan semua yang sedang Koko perjuangkan bisa menemukan jalan terbaiknya.</p>
+    <p>Ghinna mungkin nggak selalu bisa bikin semuanya sempurna, tapi Ghinna akan selalu berharap yang terbaik buat Koko. Semoga senyum Koko selalu punya banyak alasan untuk muncul, bukan cuma hari ini, tapi di hari-hari berikutnya juga.</p>
+    <p>Thank you for existing, for all the little moments, and for being someone so special in my life. I hope this birthday becomes one of the many beautiful memories we get to keep together.</p>
+    <p>Happy birthday, Koko Samuel. I love you. 🤍</p>
+    <p>Love,<br><b>Ghinna</b> 🤍</p>
+   </div>
+ </div>
+</section>
+
+<section class="page">
+ <div class="card">
+  <div class="music">
+   <div class="eyebrow">Press play while you read this…</div>
+   <h2 class="serif" style="font-size:42px">Our Song 🎧</h2>
+   <p id="songName">I Love You — Job Covers</p>
+   <!-- Taruh file music.mp3 (lagu I Love You - Job Covers) di folder yang sama dengan index.html -->
+   <audio id="audio" src="music.mp3"></audio>
+   <button class="btn" onclick="toggleMusic()" id="musicBtn">▶ Play</button>
+   <p class="small">Kalau musik tidak otomatis berjalan, tekan tombol Play.</p>
+  </div>
+ </div>
+</section>
+
+<section class="page final">
+ <div class="card">
+  <div class="eyebrow">One last thing…</div>
+  <img class="photo" src="foto-terbaik.jpg" alt="Foto terbaik">
+  <h2 class="serif" style="font-size:48px">Happy Birthday, Samuel. 🤍</h2>
+  <p>Distance may keep us apart sometimes, but it will never change how much you mean to me.</p>
+  <p>May this year bring you everything you’ve been praying for. And if I’m lucky enough, I hope I’ll be there for many more birthdays.</p>
+  <div class="script">I love you. Always. 🤍</div>
+ </div>
+</section>
+</main>
+
+<div id="confetti" class="confetti"></div>
+<script>
+function openGift(){
+ document.getElementById('main').classList.remove('hidden');
+ document.getElementById('main').scrollIntoView({behavior:'smooth'});
+ confetti();
+ document.querySelectorAll('.reveal').forEach((el,i)=>setTimeout(()=>el.classList.add('show'),200+i*120));
+}
+const audio=document.getElementById('audio');
+function toggleMusic(){
+ if(audio.paused){audio.play();document.getElementById('musicBtn').textContent='❚❚ Pause'}
+ else{audio.pause();document.getElementById('musicBtn').textContent='▶ Play'}
+}
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
+function confetti(){
+ const box=document.getElementById('confetti'); box.innerHTML='';
+ for(let i=0;i<80;i++){
+  const p=document.createElement('i');p.className='piece';
+  p.style.left=Math.random()*100+'%';p.style.animationDelay=Math.random()*1.5+'s';
+  p.style.transform=`rotate(${Math.random()*360}deg)`;
+  p.style.background=['#4a3030','#b88d86','#d9b8a9','#f4dfd5','#fff'][Math.floor(Math.random()*5)];
+  box.appendChild(p);
+ }
+ setTimeout(()=>box.innerHTML='',4500);
+}
+</script>
+</body>
+</html>
